@@ -1,0 +1,31 @@
+3345123 
+ 
+
+ 
+
+“
+
+Use transaction SE91 to check whether messages 014 and 015 exist for the message class RESRSE.
+If messages 014 and 015 are missing, create them with the following text:
+RESRSE014: No reversal possible for version &2 due to newer version &1 (intreno &3)
+RESRSE015: No reversal possible for version &2 as version &1 still open (intreno &3)
+
+“
+
+3033985 
+ 
+
+Use transaction SE11 to create the data element RECACTRATE_BADI. Use KURSF as the domain and RE_CA_CT as the package. On the "Further Characteristics" tab page, enter the value CTRATE_BADI as the default component name and select the "Change Document" field. Use the following entries as field labels:
+Short 10 Rate BAdI
+Medium 15 Rate from BAdI
+Long 20 Exchange Rate - BAdI
+Heading 10 Rate BAdI
+
+Activate the data element.
+
+ 
+
+Caution: You have to perform this manual activity separately in each system into which you transport the Note for implementation.
+
+The documentation of the new data element RECACTRATE_BADI is provided only by means of a support package.
+The release in the visible elements of the package interface RE_CA_CT_API is also only provided via a support package.
